@@ -1,0 +1,179 @@
+/* Inventario.css */
+.inventario-container {
+    padding: 30px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+}
+
+.inventario-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.inventario-header h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.8em;
+}
+
+.valorizacion-mini {
+    margin: 8px 0 0;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.valorizacion-monto {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-nav {
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-azul { background-color: #3498db; }
+.btn-verde { background-color: #2ecc71; }
+.btn-gris { background-color: #95a5a6; }
+
+.inventario-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.input-busqueda {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inventario-tabla {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    font-size: 0.85em;
+}
+
+.inventario-tabla th {
+    padding: 12px;
+    text-align: left;
+    color: #7f8c8d;
+    border-bottom: 2px solid #eee;
+    font-weight: 600;
+}
+
+.inventario-tabla td {
+    padding: 12px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.img-portada {
+    width: 40px;
+    height: 55px;
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: zoom-in;
+    border: 1px solid #eee;
+}
+
+.stock-pill {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.stock-bajo { background-color: #fff0f0; color: #e74c3c; }
+.stock-ok { background-color: #f0fff4; color: #2ecc71; }
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 4000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    width: 70%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.inventario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 25px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.inventario-tabla tr:hover td {
+    background-color: #f9f9f9; 
+}
+
+.chatbot-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5000;
+}
+
+.btn-chat-toggle {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.chatbot-ventana {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-header { background: #2c3e50; color: white; padding: 10px; font-weight: bold; }
+.chatbot-body { padding: 10px; max-height: 200px; overflow-y: auto; font-size: 0.9em; }
+.msg.bot { background: #f0f2f5; padding: 8px; border-radius: 8px; margin-bottom: 8px; }
+.chatbot-footer { display: flex; gap: 5px; padding: 10px; border-top: 1px solid #eee; }
+.chatbot-footer button { font-size: 0.8em; cursor: pointer; padding: 5px; border-radius: 4px; border: 1px solid #ddd; }

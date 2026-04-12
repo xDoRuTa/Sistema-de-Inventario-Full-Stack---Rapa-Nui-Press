@@ -1,0 +1,160 @@
+/* Calculadora.css */
+.calculadora-container {
+    padding: 30px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+}
+
+.btn-volver {
+    color: #34495e;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.layout-calculadora {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.seccion-busqueda {
+    flex: 1.5;
+}
+
+.seccion-resumen {
+    flex: 1;
+    position: sticky;
+    top: 30px;
+}
+
+.titulo-logistica {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.input-busqueda-calc {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.calc-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.scroll-busqueda {
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+.item-busqueda {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-libro-calc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-calc {
+    width: 45px;
+    height: 65px;
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: zoom-in;
+    border: 1px solid #eee;
+}
+
+.btn-añadir {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.resumen-titulo {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.scroll-pedido {
+    max-height: 35vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.item-pedido-lista {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.input-cantidad-calc {
+    width: 50px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.caja-totales {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.total-neto {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.btn-confirmar-envio {
+    width: 100%;
+    padding: 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-vaciar {
+    width: 100%;
+    margin-top: 12px;
+    padding: 8px;
+    background-color: transparent;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
